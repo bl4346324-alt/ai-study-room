@@ -1,0 +1,15 @@
+{
+	"appId": "com.aistudy.room",
+	"appName": "AI自习室",
+	"webDir": "dist",
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 0,
+			"backgroundColor": "#1a1a2e"
+		},
+		"StatusBar": {
+			"style": "DARK",
+			"backgroundColor": "#1a1a2e"
+		}
+	}
+}
