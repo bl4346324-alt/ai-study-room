@@ -16,16 +16,14 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           version: 10.30.3
-          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Build web assets
         run: pnpm run build
@@ -35,7 +33,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-          cache: 'gradle'
 
       - name: Sync Android project
         run: npx cap sync android
